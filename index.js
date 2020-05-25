@@ -27,7 +27,7 @@ let Config = require('./config');
             success += stat.successCount;
             failed += stat.faildCount;
         }
-        console.log(`aliyun-dm request=${request}i,unavailable=${unavailable}i,success=${success}i, failed=${failed}i ${new Date().getTime()*1000*1000}`);
+        console.log(`aliyun-dm request=${request}i,unavailable=${unavailable}i,success=${success}i,failed=${failed}i ${new Date().getTime()*1000*1000}`);
     } catch (err) {
         console.log(err);
     }
