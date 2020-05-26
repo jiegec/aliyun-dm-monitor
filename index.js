@@ -10,7 +10,7 @@ let Config = require('./config');
         });
 
         let today = new Date();
-        let last_week = new Date(today.getTime() - 3600 * 24 * 7);
+        let last_week = new Date(today.getTime() - 3600 * 24 * 6 * 1000);
         let res = await client.get("/", {
             Action: "SenderStatisticsByTagNameAndBatchID",
             Version: "2015-11-23",
